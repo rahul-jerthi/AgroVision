@@ -1,33 +1,12 @@
-# ✅ Core ML dependencies (compatible versions)
-tensorflow==2.13.0
-keras==2.13.1
-numpy==1.26.4
-pillow==11.3.0
-protobuf==3.20.3
-h5py==3.14.0
+fastapi>=0.116.0
+uvicorn>=0.35.0
+tensorflow>=2.13.0,<2.17
+keras>=3.0.0,<4.0.0
+pillow
+numpy
+python-multipart
+protobuf
+requests
 
-# ✅ FastAPI & backend
-fastapi==0.116.0
-uvicorn==0.35.0
-python-multipart==0.0.20
-requests==2.32.4
-
-# ✅ Streamlit (optional — for local testing UI)
-streamlit==1.46.1
-
-# ✅ Dependencies needed by TensorFlow
-absl-py==2.3.1
-wrapt==1.12.1
-six==1.15.0
-opt-einsum==3.3.0
-google-pasta==0.2.0
-termcolor==1.1.0
-flatbuffers==25.2.10
-gast==0.4.0
-
-# ✅ Optional visualization / extra tools
-matplotlib==3.9.4
-pandas==2.3.1
-
-# ✅ For Render + Python 3.9
-typing_extensions==4.14.1
+# Optional: Only include what you really use
+# streamlit==1.46.1  ← only if needed
