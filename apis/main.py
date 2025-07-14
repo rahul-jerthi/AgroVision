@@ -99,6 +99,15 @@ async def predict(file: UploadFile = File(...)):
     }
 
 
+
+import os
+
+if __name__ == "__main__":
+    port = int(os.environ.get("PORT", 8000))  # use PORT from env, fallback to 8000
+    uvicorn.run("apis.main:app", host="0.0.0.0", port=port)
+
+
+
     # predictions = MODEL.predict(img_batch)
     # print("🧪 Predictions raw output:", predictions)
 
