@@ -59,7 +59,7 @@ app = FastAPI()
 
 # Load exported SavedModel using TFSMLayer (Keras 3+)
 input_layer = Input(shape=(256, 256, 3), name="input_image")
-output_layer = TFSMLayer("../saved_model/v1", call_endpoint="serving_default")(input_layer)
+output_layer = TFSMLayer("saved_model/v1", call_endpoint="serving_default")(input_layer)
 MODEL = Model(inputs=input_layer, outputs=output_layer)
 
 # Classes your model predicts
